@@ -8,15 +8,15 @@ int main() {
     getline(cin, input);
     string res;
     int sp = 0;
-    bool inWord = false;
+    bool ww = false;
     for (char x : input) {
         if (x != ' ') {
             res += x; 
             inWord = true; 
         } else {
-            if (inWord) {
+            if (ww) {
                 res += ' '; 
-                inWord = false; 
+                ww = false; 
             }
             sp++; 
         }
